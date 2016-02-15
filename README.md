@@ -285,9 +285,7 @@ If you are not very Pythonic, you can use:
     >>> map(vars, Question.objects.all())
     [{'pub_date': datetime.datetime(2016, 2, 15, 7, 2, 44, 743849, tzinfo=<UTC>),
      'question_text': u"What's new?",
-     '_state': <django.db.models.base.ModelState object at 0x1088f6810>,
+     '_state': <django.db.models.base.ModelState object at 0x104a1c990>,
      'id': 1}]
 
 and you will get the same result.
-
-     
