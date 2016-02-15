@@ -354,7 +354,7 @@ question:
     >>> c.question
     <Question: What's up?>
 
-## To create a website manager:
+## To create an account for a website manager:
 
     $ python manage.py createsuperuser    
 
