@@ -11,4 +11,6 @@ https://bootstrap.pypa.io/get-pip.py
 
 now run
 
-$ python get-pip.py
+    $ python get-pip.py
+
+    
