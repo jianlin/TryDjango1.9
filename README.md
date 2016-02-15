@@ -27,3 +27,19 @@ and now if you check that pip is installed:
 
     $ pip --version
     pip 8.0.2 from /Library/Python/2.7/site-packages (python 2.7)
+
+## Now install virtualenv
+
+The webpage is at http://virtualenv.readthedocs.org/en/latest/installation.html
+
+To install on Mac:
+
+    $ sudo pip install virtualenv
+
+Checking it is installed:
+
+    $ virtualenv --version
+    14.0.6
+
+
+    
