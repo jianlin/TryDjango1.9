@@ -319,6 +319,5 @@ Some of the noteworthy data access examples:
 
     # Make sure our custom method worked.
     >>> q = Question.objects.get(pk=1)
-    >>> q.was_published_recently()         # this was an instance method defined
-                                           # in the Question class
+    >>> q.was_published_recently()         # this was an instance method defined in the Question class
     True
