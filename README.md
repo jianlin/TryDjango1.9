@@ -350,4 +350,5 @@ use:
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'somepass';
 
 to change the password to some simple one, such as `somepass` above,
-if you are still in the development phase and need a simple password.
+if you are still in the development phase and want to use a simple password
+instead.
