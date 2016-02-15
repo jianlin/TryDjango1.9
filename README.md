@@ -355,6 +355,11 @@ question:
 and just use a user name, such as `admin`,
 and a password (in this example repo, it is `some1234`).
 
+and now, run the server as before (`python manage.py runserver`), and go to
+
+> http://127.0.0.1:8000/admin/
+
+and you will be able to log in as admin.
 
 ## If you install MySQL
 
