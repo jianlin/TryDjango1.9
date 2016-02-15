@@ -162,6 +162,6 @@ and you can git push to your github or gitlab account if you want.
 
 Now go to your web browser, and type in
 
-    http://127.0.0.1:8000/
+> http://127.0.0.1:8000/
 
 and you will see your website running.
