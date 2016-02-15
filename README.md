@@ -289,3 +289,35 @@ If you are not very Pythonic, you can use:
      'id': 1}]
 
 and you will get the same result.
+
+Some of the noteworthy data access examples:
+
+    # Django provides a rich database lookup API that's entirely driven by
+    # keyword arguments.
+    >>> Question.objects.filter(id=1)
+    [<Question: What's up?>]
+    >>> Question.objects.filter(question_text__startswith='What')
+    [<Question: What's up?>]
+
+    # Get the question that was published this year.
+    >>> from django.utils import timezone
+    >>> current_year = timezone.now().year
+    >>> Question.objects.get(pub_date__year=current_year)
+    <Question: What's up?>
+
+    # Request an ID that doesn't exist, this will raise an exception.
+    >>> Question.objects.get(id=2)
+    Traceback (most recent call last):
+        ...
+    DoesNotExist: Question matching query does not exist.
+
+    # Lookup by a primary key is the most common case, so Django provides a
+    # shortcut for primary-key exact lookups.
+    # The following is identical to Question.objects.get(id=1).
+    >>> Question.objects.get(pk=1)
+    <Question: What's up?>
+
+    # Make sure our custom method worked.
+    >>> q = Question.objects.get(pk=1)
+    >>> q.was_published_recently()
+    True
