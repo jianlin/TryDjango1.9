@@ -129,4 +129,19 @@ So, to install Django:
 
 And the place to look at is: https://docs.djangoproject.com/en/1.9/intro/
 
-     
+### To make sure Django is installed:
+
+    $ python
+    >>> import django
+    >>> django.get_version()
+    '1.9.2'
+
+## Create a new Django Project
+
+More info is on https://docs.djangoproject.com/en/1.9/intro/tutorial01/
+
+To create a new Django project:
+
+    $ django-admin startproject mysite
+
+    
