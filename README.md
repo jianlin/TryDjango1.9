@@ -42,7 +42,7 @@ Checking it is installed:
     14.0.6
 
 
- ## Install virtualenvwrapper
+## Install virtualenvwrapper
 
  Follow the instructions on http://virtualenvwrapper.readthedocs.org/en/latest/install.html
 
@@ -55,5 +55,3 @@ Checking it is installed:
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/Devel
     source /usr/local/bin/virtualenvwrapper.sh
-
-    
