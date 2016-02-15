@@ -321,3 +321,14 @@ Some of the noteworthy data access examples:
     >>> q = Question.objects.get(pk=1)
     >>> q.was_published_recently()         # this was an instance method defined in the Question class
     True
+
+Note that for the example on the tutorial webpage, a question can have many
+choices, but a choice cannot belong to more than one question (so for example,
+the choice of "No comment" can, in some applications, belong to multiple
+questions, but in this app, we assume that "No comment" is just some text
+that won't belong to multiple questions).  So, this is a classical case of
+one-to-many relationship, as represented by the Choice table having possibly
+multiple rows pointing back to a Question row, by the way of a question id.
+That is, a question "What is your favorite color?", can have a Choice row
+of "Orange", and pointing back to Question row with id 1, and a Choice row of
+"Blue", also pointing back to Question row with id 1, and so forth.
