@@ -269,6 +269,10 @@ running in Django:
 
     $ python manage.py shell
 
+Note that there are some steps you would do as listed on
+https://docs.djangoproject.com/en/1.9/intro/tutorial02/. The following
+is just some additional info or summary to key points.
+
 Before you define the instance method `__str__` for the Question
 class, you actually can see all objects this way:
 
