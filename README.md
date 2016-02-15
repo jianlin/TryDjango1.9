@@ -264,7 +264,12 @@ You will see your polls main page loaded in your browser.
 
 Now you can go to https://docs.djangoproject.com/en/1.9/intro/tutorial02/
 
-Just that before you define the instance method `__str__` for the Question
+One thing worth noting is that, to start the environment as if you are
+running in Django:
+
+    $ python manage.py shell
+
+Before you define the instance method `__str__` for the Question
 class, you actually can see all objects this way:
 
     >>> [vars(obj) for obj in Question.objects.all()]
