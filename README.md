@@ -348,6 +348,14 @@ question:
     >>> c.question
     <Question: What's up?>
 
+## To create a website manager:
+
+    $ python manage.py createsuperuser    
+
+and just use a user name, such as `admin`,
+and a password (in this repo, it is `some1234`).
+    
+
 ## If you install MySQL
 
 In [Two Scoops of Django](https://www.twoscoopspress.com/products/two-scoops-of-django-1-8), it is said that it
