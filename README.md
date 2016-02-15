@@ -144,4 +144,24 @@ To create a new Django project:
 
     $ django-admin startproject mysite
 
-    
+Note that the above command will create a folder with a bunch of files in it.
+I tend to use git to track what files are created in each phase of the project,
+so at this point, I may
+
+    $ cd mysite
+    $ git init
+    $ git add .
+    $ git commit -am "initial Django 1.9 Project"
+
+and you can git push to your github or gitlab account if you want.
+
+## Starting your website:
+
+    $ cd mysite    # if you are not already in it
+    $
+
+Now go to your web browser, and type in
+
+    http://127.0.0.1:8000/
+
+and you will see your website running.
