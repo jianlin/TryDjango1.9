@@ -333,6 +333,21 @@ That is, a question "What is your favorite color?", can have a Choice row
 of "Orange", and pointing back to Question row with id 1, and a Choice row of
 "Blue", also pointing back to Question row with id 1, and so forth.
 
+So that's why, the choices belong to a set, and each choice will have *one*
+question:
+
+    >>> q = Question.objects.get(pk=1)
+
+    >>> q.choice_set.all()
+    [<Choice: Not much>, <Choice: The sky>, <Choice: Just hacking again>]
+
+    >>> q.choice_set.count()
+    3
+
+    >>> c = Choice.objects.first()
+    >>> c.question
+    <Question: What's up?>
+
 ## If you install MySQL
 
 In [Two Scoops of Django](https://www.twoscoopspress.com/products/two-scoops-of-django-1-8), it is said that it
