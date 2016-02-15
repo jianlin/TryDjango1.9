@@ -353,8 +353,8 @@ question:
     $ python manage.py createsuperuser    
 
 and just use a user name, such as `admin`,
-and a password (in this repo, it is `some1234`).
-    
+and a password (in this example repo, it is `some1234`).
+
 
 ## If you install MySQL
 
