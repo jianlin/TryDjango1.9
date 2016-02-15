@@ -354,7 +354,8 @@ question:
     >>> c.question
     <Question: What's up?>
 
-We can also see that the 2 choices both point back to the same question:
+We can also see that the 2 choices both point back to the same question (the
+question with question id = 1):
 
     >>> import pprint
     >>> pp = pprint.PrettyPrinter(indent=4).pprint
