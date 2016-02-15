@@ -264,7 +264,7 @@ You will see your polls main page loaded in your browser.
 
 Now you can go to https://docs.djangoproject.com/en/1.9/intro/tutorial02/
 
-Just that before you define __str__, you actually can see all objects this way:
+Just that before you define `__str__`, you actually can see all objects this way:
 
     >>> [vars(obj) for obj in Question.objects.all()]
     [{'pub_date': datetime.datetime(2016, 2, 15, 7, 2, 44, 743849, tzinfo=<UTC>), 'question_text': u"What's new?", '_state': <django.db.models.base.ModelState object at 0x1088f6810>, 'id': 1}]
