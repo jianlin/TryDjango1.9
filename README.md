@@ -102,3 +102,21 @@ and listing the environments will show:
     (django19try01) $
 
 Note that the prompt changed, indicating we are now in "django19try01".
+
+## Now install Django:
+
+Note that since we have virtual environments, any pip commands we do, we do not need
+to preceed it with a "sudo".
+
+So, to install Django:
+
+    (django19try01) $ pip install Django
+    Collecting Django
+    # ...
+      Downloading Django-1.9.2-py2.py3-none-any.whl (6.6MB)
+        100% |████████████████████████████████| 6.6MB 74kB/s
+    Installing collected packages: Django
+    Successfully installed Django-1.9.2
+    (django19try01) $
+
+    
