@@ -44,13 +44,13 @@ Checking it is installed:
 
 ## Install virtualenvwrapper
 
- Follow the instructions on http://virtualenvwrapper.readthedocs.org/en/latest/install.html
+Follow the instructions on http://virtualenvwrapper.readthedocs.org/en/latest/install.html
 
- Essentially, it is
+Essentially, it is
 
-     $ sudo pip install virtualenvwrapper
+    $ sudo pip install virtualenvwrapper
 
- and adding these lines to your ~/.profile or ~/.bashrc
+and adding these lines to your ~/.profile or ~/.bashrc
 
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/Devel
