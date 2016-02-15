@@ -272,6 +272,8 @@ running in Django:
 Before you define the instance method `__str__` for the Question
 class, you actually can see all objects this way:
 
+    >>> from polls.models import Question, Choice
+
     >>> [vars(obj) for obj in Question.objects.all()]
     [{'pub_date': datetime.datetime(2016, 2, 15, 7, 2, 44, 743849, tzinfo=<UTC>),
      'question_text': u"What's new?",
