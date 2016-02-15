@@ -279,3 +279,15 @@ class, you actually can see all objects this way:
      'id': 1}]
 
 (note that the output is re-formatted for better display.)
+
+If you are not very Pythonic, you can use:
+
+    >>> map(vars, Question.objects.all())
+    [{'pub_date': datetime.datetime(2016, 2, 15, 7, 2, 44, 743849, tzinfo=<UTC>),
+     'question_text': u"What's new?",
+     '_state': <django.db.models.base.ModelState object at 0x1088f6810>,
+     'id': 1}]
+
+and you will get the same result.
+
+     
