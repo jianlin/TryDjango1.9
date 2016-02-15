@@ -119,4 +119,14 @@ So, to install Django:
     Successfully installed Django-1.9.2
     (django19try01) $
 
-    
+ So we see, Django 1.9.2 was installed.  
+
+ If we want to install a particular version of Django, it is:
+
+     $ pip install Django==1.9.2
+
+## Now, you can start using Django
+
+And the place to look at is: https://docs.djangoproject.com/en/1.9/intro/
+
+     
