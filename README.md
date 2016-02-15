@@ -351,7 +351,7 @@ Now, restart Bash, and use
 
     $ mysql -u root -p    
 
-and type in the initial password provided by the MySQL installation, and
+and type in the initial complicated password provided by the MySQL installation, and
 use:
 
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'somepass';
