@@ -1,7 +1,15 @@
 
 # On a Mac with Mavericks
 
-## install pip, by going to
+## Making sure you have Python
+
+Since some libraries or 3rd party modules may require Python 2, so
+for the moment, let's stick with Python 2.
+
+    $ python --version
+    Python 2.7.5
+
+## Install pip, by going to
 
 https://pip.pypa.io/en/latest/installing/#do-i-need-to-install-pip
 
