@@ -354,6 +354,23 @@ question:
     >>> c.question
     <Question: What's up?>
 
+We can also see that the 2 choices both point back to the same question:
+
+    >>> import pprint
+    >>> pp = pprint.PrettyPrinter(indent=4).pprint
+
+    >>> pp([vars(obj) for obj in Choice.objects.all()])
+    [   {   '_state': <django.db.models.base.ModelState object at 0x108570b10>,
+            'choice_text': u'Not much',
+            'id': 1,
+            'question_id': 1,
+            'votes': 0},
+        {   '_state': <django.db.models.base.ModelState object at 0x108570a10>,
+            'choice_text': u'The sky',
+            'id': 2,
+            'question_id': 1,
+            'votes': 0}]
+
 ## To create an account for a website manager:
 
     $ python manage.py createsuperuser    
