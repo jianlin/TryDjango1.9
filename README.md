@@ -44,7 +44,9 @@ Checking it is installed:
 
 ## Install virtualenvwrapper
 
-Follow the instructions on http://virtualenvwrapper.readthedocs.org/en/latest/install.html
+virtualenvwrapper makes it easier to use, than using virtualenv alone.
+
+To install, follow the instructions on http://virtualenvwrapper.readthedocs.org/en/latest/install.html
 
 Essentially, it is
 
