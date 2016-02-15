@@ -80,7 +80,7 @@ and if we type workon, then it will show the list of environments we have:
     (django19try01) $ workon
     django19try01   
 
-Create one more virtual environment:
+### Create one more virtual environment:
 
     (django19try01) $ mkvirtualenv django19try02
     New python executable in /Users/pyay/.virtualenvs/django19try02/bin/python
