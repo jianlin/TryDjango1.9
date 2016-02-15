@@ -333,7 +333,13 @@ That is, a question "What is your favorite color?", can have a Choice row
 of "Orange", and pointing back to Question row with id 1, and a Choice row of
 "Blue", also pointing back to Question row with id 1, and so forth.
 
-## If you install MySQL 5.7.11
+## If you install MySQL
+
+In [Two Scoops of Django](https://www.twoscoopspress.com/products/two-scoops-of-django-1-8), it is said that it
+is better to use the database system in development, as you would in
+production, so that you won't run into small differences in the DBMS.
+
+So let's say if you install MySQL, currently at version 5.7.11 as of writing:
 
 Note that on the Mac, you have to go to OS X's System Preferences, and turn on
 MySQL server, and add to your .bashrc or .profile:
