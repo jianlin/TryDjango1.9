@@ -6,7 +6,7 @@
 Since some 3rd party modules may require Python 2, so
 for the moment, let's stick with Python 2.
 
-To make sure it is installed on your Mac:
+Python is pre-installed on Macs. Just to see that it is installed on your Mac:
 
     $ python --version
     Python 2.7.5
