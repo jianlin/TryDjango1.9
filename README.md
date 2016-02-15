@@ -3,8 +3,10 @@
 
 ## Making sure you have Python
 
-Since some libraries or 3rd party modules may require Python 2, so
+Since some 3rd party modules may require Python 2, so
 for the moment, let's stick with Python 2.
+
+To make sure it is installed on your Mac:
 
     $ python --version
     Python 2.7.5
