@@ -11,6 +11,9 @@ https://bootstrap.pypa.io/get-pip.py
 
 now run
 
-    $ python get-pip.py
+    $ sudo python get-pip.py
 
-    
+and now if you check that pip is installed:
+
+    $ pip --version
+    pip 8.0.2 from /Library/Python/2.7/site-packages (python 2.7)
