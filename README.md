@@ -158,7 +158,7 @@ and you can git push to your github or gitlab account if you want.
 ## Starting your website:
 
     $ cd mysite    # if you are not already in it
-    $
+    $ python manage.py runserver
 
 Now go to your web browser, and type in
 
