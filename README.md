@@ -3,7 +3,7 @@
 
 ## Making sure you have Python
 
-Since some 3rd party modules may require Python 2, so
+Since some 3rd party modules may not work with Python 3 and require Python 2, so
 for the moment, let's stick with Python 2.
 
 Python is pre-installed on Macs. To see it:
