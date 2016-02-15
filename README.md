@@ -254,6 +254,6 @@ Now when you run the server:
 
 and go to
 
-> http://localhost:8000/polls/
+> http://127.0.0.1:8000/polls/
 
 You will see your polls main page loaded in your browser.
