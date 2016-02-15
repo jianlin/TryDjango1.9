@@ -337,12 +337,13 @@ of "Orange", and pointing back to Question row with id 1, and a Choice row of
 
 In [Two Scoops of Django](https://www.twoscoopspress.com/products/two-scoops-of-django-1-8), it is said that it
 is better to use the database system in development, as you would in
-production, so that you won't run into small differences in the DBMS.
+production, so that you won't run into small differences when you switch
+from development to production.
 
 So let's say if you install MySQL, currently at version 5.7.11 as of writing:
 
 Note that on the Mac, you have to go to OS X's System Preferences, and turn on
-MySQL server, and add to your .bashrc or .profile:
+MySQL server, and add to your `.bashrc` or `.profile`:
 
     export PATH=$PATH:/usr/local/mysql/bin
 
