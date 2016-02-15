@@ -218,14 +218,14 @@ To create an app call "polls":
 
     $ python manage.py startapp polls
 
-Now make polls/views.py look like:
+Now make polls/views.py contain the following:
 
     from django.http import HttpResponse
 
     def index(request):
         return HttpResponse("Hello, world. You're at the polls index.")
 
-Create polls/urls.py to make it look like
+Create a file polls/urls.py and make it  contain the following:
 
     from django.conf.urls import url
 
@@ -235,7 +235,7 @@ Create polls/urls.py to make it look like
         url(r'^$', views.index, name='index'),
     ]     
 
-And finally, edit mysite/urls.py to make it look like:
+And finally, edit mysite/urls.py to make it:
 
     from django.conf.urls import include, url
     from django.contrib import admin
@@ -244,6 +244,9 @@ And finally, edit mysite/urls.py to make it look like:
         url(r'^polls/', include('polls.urls')),
         url(r'^admin/', admin.site.urls),
     ]       
+
+Note that there is a "include" added to the first line, if compared to the
+original file that Django created.
 
 Now when you run the server:
 
@@ -254,5 +257,3 @@ and go to
 > http://localhost:8000/polls/
 
 You will see your polls main page loaded in your browser.
-
-    
