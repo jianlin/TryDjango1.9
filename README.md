@@ -64,3 +64,41 @@ Now you can use workon, which gives you an empty list
 
     $ workon
     $             # <-- nothing is printed
+
+Now you can create a virtual environment and go into it:
+
+    $ mkvirtualenv django19try01
+    New python executable in /Users/pyay/.virtualenvs/django19try01/bin/python
+    Installing setuptools, pip, wheel...done.
+
+Note that now, the prompt in Bash has the environment "(django19try01)" at the very beginning:
+
+    (django19try01) $
+
+and if we type workon, then it will show the list of environments we have:    
+
+    (django19try01) $ workon
+    django19try01   
+
+Create one more virtual environment:
+
+    (django19try01) $ mkvirtualenv django19try02
+    New python executable in /Users/pyay/.virtualenvs/django19try02/bin/python
+    Installing setuptools, pip, wheel...done.
+
+    (django19try02) $
+
+Note that the prompt shows that we are in the environment "django19try02".
+
+and listing the environments will show:
+
+    (django19try02) $ workon
+    django19try01
+    django19try02
+
+### To switch to another environment:
+
+    (django19try02) $ workon django19try01
+    (django19try01) $
+
+Note that the prompt changed, indicating we are now in "django19try01".
