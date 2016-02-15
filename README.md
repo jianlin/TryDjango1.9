@@ -363,6 +363,18 @@ and now, run the server as before (`python manage.py runserver`), and go to
 
 and you will be able to log in as admin.
 
+## How to edit your data as admin
+
+Just by changing `polls/admin.py` to:
+
+    from django.contrib import admin
+
+    from .models import Question
+
+    admin.site.register(Question)
+
+You can already go to the admin page http://127.0.0.1:8000/admin/ and modify your questions.
+
 ## If you install MySQL
 
 In [Two Scoops of Django](https://www.twoscoopspress.com/products/two-scoops-of-django-1-8), it is said that it
