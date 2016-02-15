@@ -205,3 +205,54 @@ Now at this point, the sqlite database has been updated, as seen by git status:
     	modified:   db.sqlite3
 
     no changes added to commit (use "git add" and/or "git commit -a")
+
+## Creating an "app" in the "project"
+
+From now on, we will follow https://docs.djangoproject.com/en/1.9/intro/tutorial01/
+
+You can read that page and move on, or read the summary below:
+
+We already had a project, and a project is a collection of "apps".
+
+To create an app call "polls":
+
+    $ python manage.py startapp polls
+
+Now make polls/views.py look like:
+
+    from django.http import HttpResponse
+
+    def index(request):
+        return HttpResponse("Hello, world. You're at the polls index.")
+
+Create polls/urls.py to make it look like
+
+    from django.conf.urls import url
+
+    from . import views
+
+    urlpatterns = [
+        url(r'^$', views.index, name='index'),
+    ]     
+
+And finally, edit mysite/urls.py to make it look like:
+
+    from django.conf.urls import include, url
+    from django.contrib import admin
+
+    urlpatterns = [
+        url(r'^polls/', include('polls.urls')),
+        url(r'^admin/', admin.site.urls),
+    ]       
+
+Now when you run the server:
+
+    $ python manage.py runserver    
+
+and go to
+
+> http://localhost:8000/polls/
+
+You will see your polls main page loaded in your browser.
+
+    
