@@ -332,3 +332,22 @@ multiple rows pointing back to a Question row, by the way of a question id.
 That is, a question "What is your favorite color?", can have a Choice row
 of "Orange", and pointing back to Question row with id 1, and a Choice row of
 "Blue", also pointing back to Question row with id 1, and so forth.
+
+## If you install MySQL 5.7.11
+
+Note that on the Mac, you have to go to OS X's System Preferences, and turn on
+MySQL server, and add to your .bashrc or .profile:
+
+    export PATH=$PATH:/usr/local/mysql/bin
+
+Now, restart Bash, and use
+
+    $ mysql -u root -p    
+
+and type in the weird, initial password provided by the MySQL installation, and
+use:
+
+    ALTER USER 'root'@'localhost' IDENTIFIED BY 'somepass';
+
+to change the password to some simple one, such as `somepass` above,
+if you are still in the development phase and need a simple password.
