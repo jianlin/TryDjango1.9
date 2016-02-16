@@ -403,7 +403,7 @@ See https://docs.djangoproject.com/en/1.9/intro/tutorial03/
 
 ## Creating RESTful API
 
-According to Lightweight Django, O'Reilly, there are 2 popular ways to build
+According to Lightweight Django, O'Reilly, 2015, there are 2 popular ways to build
 RESTful API with Django: `django-rest-framework` and `django-tastypie`.
 
 To build one and see it working quickly using `django-rest-framework`, go to:
