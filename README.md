@@ -431,7 +431,7 @@ If you look into the request and response, you can see that:
 - GET is used to Read, with an HTTP code of `200 OK`.
 - To Update or Delete, it is also POST, with `_method` being `PUT` for Update,
   and `DELETE` for Delete. The HTTP response code for the update is `200 OK`,
-  and for delete, it is `200 NO CONTENT`
+  and for delete, it is `200 NO CONTENT` (instead of `204`)
 
 
 ## If you install MySQL
