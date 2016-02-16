@@ -427,10 +427,11 @@ A sandbox is for you to play with: http://restframework.herokuapp.com/
 
 If you look into the request and response, you can see that:
 
-- POST was used to create, with a HTTP response code of `201 Created`
-- GET is used to retrieve, with an HTTP code of `200 OK`.
-- To Update or Delete, it is also POST, with `_method` being `PUT` for update,
-  and `DELETE` for delete.
+- POST is used to Create as in CRUD, with an HTTP response code of `201 CREATED`
+- GET is used to Read, with an HTTP code of `200 OK`.
+- To Update or Delete, it is also POST, with `_method` being `PUT` for Update,
+  and `DELETE` for Delete. The HTTP response code for the update is `200 OK`,
+  and for delete, it is `200 NO CONTENT`
 
 
 ## If you install MySQL
