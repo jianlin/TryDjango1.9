@@ -401,10 +401,10 @@ You can already go to the admin page http://127.0.0.1:8000/admin/ and modify you
 
 See https://docs.djangoproject.com/en/1.9/intro/tutorial03/
 
-## Creating RESTful API
+## Creating REST api
 
 According to Lightweight Django, O'Reilly, 2015, there are 2 popular ways to build
-RESTful API with Django: `django-rest-framework` and `django-tastypie`.
+REST api with Django: `django-rest-framework` and `django-tastypie`.
 
 To build one and see it working quickly using `django-rest-framework`, go to:
 
@@ -420,6 +420,18 @@ If you use your browser to test it, go to
 > http://127.0.0.1:8000/users/
 
 and make sure you log in by using the link at the top right corner of the page.    
+
+You can also go through a 6 part tutorial, at http://www.django-rest-framework.org/tutorial/1-serialization/
+
+A sandbox is for you to play with: http://restframework.herokuapp.com/
+
+If you look into the request and response, you can see that:
+
+- POST was used to create, with a HTTP response code of `201 Created`
+- GET is used to retrieve, with an HTTP code of `200 OK`.
+- To Update or Delete, it is also POST, with `_method` being `PUT` for update,
+  and `DELETE` for delete.
+
 
 ## If you install MySQL
 
