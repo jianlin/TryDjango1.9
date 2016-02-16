@@ -401,6 +401,25 @@ You can already go to the admin page http://127.0.0.1:8000/admin/ and modify you
 
 See https://docs.djangoproject.com/en/1.9/intro/tutorial03/
 
+## Creating RESTful API
+
+According to Lightweight Django, O'Reilly, there are 2 popular ways to build
+RESTful API with Django: `django-rest-framework` and `django-tastypie`.
+
+To build one and see it working quickly using `django-rest-framework`, go to:
+
+> http://www.django-rest-framework.org/tutorial/quickstart/
+
+To using `httpie` to access your API, install it first:
+
+    $ pip install httpie
+    $ http -a admin:password123 http://127.0.0.1:8000/users/
+
+If you use your browser to test it, go to
+
+> http://127.0.0.1:8000/users/
+
+and make sure you log in by using the link at the top right corner of the page.    
 
 ## If you install MySQL
 
