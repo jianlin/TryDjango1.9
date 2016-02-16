@@ -397,6 +397,11 @@ Just by changing `polls/admin.py` to:
 
 You can already go to the admin page http://127.0.0.1:8000/admin/ and modify your questions.
 
+## How to route some URL to views, and display data using templates
+
+See https://docs.djangoproject.com/en/1.9/intro/tutorial03/
+
+
 ## If you install MySQL
 
 In [Two Scoops of Django](https://www.twoscoopspress.com/products/two-scoops-of-django-1-8), it is said that it
