@@ -4,11 +4,21 @@ from django.shortcuts import render
 
 
 from django.http import HttpResponse
+from django.template import loader
+
 from .models import Question
 
 import json
 
 def index(request):
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    template = loader.get_template('polls/index.html')
+    context = {
+        'latest_question_list': latest_question_list,
+    }
+    return HttpResponse(template.render(context, request))
+
+def index_without_using_template(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     output = ', \n'.join([str(vars(q)) for q in latest_question_list])
     return HttpResponse("<pre>" + output)
